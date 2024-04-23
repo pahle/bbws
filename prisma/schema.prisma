@@ -1,0 +1,46 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Data {
+  id        Int      @id @default(autoincrement())
+  key       String   @unique
+  judul     String   @db.VarChar(255)
+  deskripsi String?
+  arsip     Arsip[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Arsip {
+  id             Int      @id @default(autoincrement())
+  tahun          String   @db.VarChar(4)
+  dokumen        Dokumen[]
+  data           Data     @relation(fields: [dataId], references: [id])
+  dataId         Int
+  created_at     DateTime @default(now())
+  updated_at     DateTime @updatedAt
+}
+
+model Dokumen {
+  id             Int     @id @default(autoincrement())
+  kode_surat     String  @db.VarChar(255)
+  tahun          String  @db.VarChar(4)
+  judul          String  @db.VarChar(255)
+  file           String  @db.VarChar(255)
+  arsip          Arsip   @relation(fields: [arsipId], references: [id])
+  arsipId        Int
+  created_at     DateTime @default(now())
+  updated_at     DateTime @updatedAt
+}
