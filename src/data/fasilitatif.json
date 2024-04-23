@@ -1,0 +1,167 @@
+[
+  {
+    "key": "HK",
+    "judul": "Hukum",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan penyusunan produk hukum yang bersifat mengatur seperti Peraturan Perundang-undangan, Pedoman, Petunjuk Pelaksanaan, Instruksi, Surat Edaran, dan produk hukum sejenis",
+    "dokumen": [
+      {
+        "judul": "Kebijakan Pengelolaan Sumber Daya Air",
+        "file": "kebijakan_pengelolaan_sumber_daya_air.pdf"
+      },
+      {
+        "judul": "Strategi Pengelolaan Sumber Daya Air",
+        "file": "strategi_pengelolaan_sumber_daya_air.pdf"
+      }
+    ]
+  },
+  {
+    "key": "KP",
+    "judul": "Kepegawaian",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan kegiatan penyusunan informasi jabatan, uraian tugas, inventarisasi, analisis, evaluasi peninjauan jabatan, spesifikasi atau persyaratan jabatan, daftar urutan kepangkatan.",
+    "dokumen": [
+      {
+        "judul": "Kebijakan Pengelolaan Sumber Daya Air",
+        "file": "kebijakan_pengelolaan_sumber_daya_air.pdf"
+      },
+      {
+        "judul": "Strategi Pengelolaan Sumber Daya Air",
+        "file": "strategi_pengelolaan_sumber_daya_air.pdf"
+      }
+    ]
+  },
+  {
+    "key": "KU",
+    "judul": "Keuangan",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan penyusunan target dan pagu indikatif Penerimaan Negara Bukan Pajak",
+    "dokumen": [
+      {
+        "judul": "Kebijakan Pengelolaan Sumber Daya Air",
+        "file": "kebijakan_pengelolaan_sumber_daya_air.pdf"
+      },
+      {
+        "judul": "Strategi Pengelolaan Sumber Daya Air",
+        "file": "strategi_pengelolaan_sumber_daya_air.pdf"
+      }
+    ]
+  },
+  {
+    "key": "OR",
+    "judul": "Organisasi dan Tata Laksana",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan perencanaan, penyusunan hingga pengesahan, evaluasi dan pengembangan struktur organisasi Kementerian Pekerjaan Umum dan Perumahan Rakyat.",
+    "dokumen": [
+      {
+        "judul": "Kebijakan Pengelolaan Sumber Daya Air",
+        "file": "kebijakan_pengelolaan_sumber_daya_air.pdf"
+      },
+      {
+        "judul": "Strategi Pengelolaan Sumber Daya Air",
+        "file": "strategi_pengelolaan_sumber_daya_air.pdf"
+      }
+    ]
+  },
+  {
+    "key": "PA",
+    "judul": "Pengelolaan Data",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan pengelolaan informasi dan data administrasi meliputi analisa dan validasi data, pengumpulan, pengolahan, pemutakhiran data geospasial dan statistik dan penyajian informasi,",
+    "dokumen": [
+      {
+        "judul": "Kebijakan Pengelolaan Sumber Daya Air",
+        "file": "kebijakan_pengelolaan_sumber_daya_air.pdf"
+      },
+      {
+        "judul": "Strategi Pengelolaan Sumber Daya Air",
+        "file": "strategi_pengelolaan_sumber_daya_air.pdf"
+      }
+    ]
+  },
+  {
+    "key": "PB",
+    "judul": "Pengadaan Barang dan Jasa",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan kegiatan pengadaan barang, baik yang berwujud maupun tidak berwujud, bergerak maupun tidak bergerak, yang dapat diperdagangkan, dipakai, digunakan, atau dimanfaatkan oleh pengguna barang/jasa.",
+    "dokumen": [
+      {
+        "judul": "Kebijakan Pengelolaan Sumber Daya Air",
+        "file": "kebijakan_pengelolaan_sumber_daya_air.pdf"
+      },
+      {
+        "judul": "Strategi Pengelolaan Sumber Daya Air",
+        "file": "strategi_pengelolaan_sumber_daya_air.pdf"
+      }
+    ]
+  },
+  {
+    "key": "PM",
+    "judul": "Penanaman Modal",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan kegiatan menanam modal untuk melakukan usaha di wilayah negara Republik Indonesia yang dilakukan oleh penanam modal dalam negeri dengan menggunakan modal dalam negeri.",
+    "dokumen": [
+      {
+        "judul": "Kebijakan Pengelolaan Sumber Daya Air",
+        "file": "kebijakan_pengelolaan_sumber_daya_air.pdf"
+      },
+      {
+        "judul": "Strategi Pengelolaan Sumber Daya Air",
+        "file": "strategi_pengelolaan_sumber_daya_air.pdf"
+      }
+    ]
+  },
+  {
+    "key": "PR",
+    "judul": "Perencanaan",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan penyusunan rencana dan program masing-masing unit kerja/unit organisasi.",
+    "dokumen": [
+      {
+        "judul": "Kebijakan Pengelolaan Sumber Daya Air",
+        "file": "kebijakan_pengelolaan_sumber_daya_air.pdf"
+      },
+      {
+        "judul": "Strategi Pengelolaan Sumber Daya Air",
+        "file": "strategi_pengelolaan_sumber_daya_air.pdf"
+      }
+    ]
+  },
+  {
+    "key": "PS",
+    "judul": "Pengelolaan Aset Barang Milik Negara",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan pengadaan aset lancar berupa barang persediaan seperti barang konsumsi, bahan untuk pemeliharaan, suku cadang, bahan baku, persediaan untuk tujuan strategis atau berjaga-jaga, dan persediaan lainnya",
+    "dokumen": [
+      {
+        "judul": "Kebijakan Pengelolaan Sumber Daya Air",
+        "file": "kebijakan_pengelolaan_sumber_daya_air.pdf"
+      },
+      {
+        "judul": "Strategi Pengelolaan Sumber Daya Air",
+        "file": "strategi_pengelolaan_sumber_daya_air.pdf"
+      }
+    ]
+  },
+  {
+    "key": "PW",
+    "judul": "Pengawasan",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan pelaksanaan pemeriksaan administrasi umum mencakup identitas dan tugas pokok, struktur organisasi, pengelolaan pelaksanaan tugas pokok, dasar pelaksanaan kegiatan audit",
+    "dokumen": [
+      {
+        "judul": "Kebijakan Pengelolaan Sumber Daya Air",
+        "file": "kebijakan_pengelolaan_sumber_daya_air.pdf"
+      },
+      {
+        "judul": "Strategi Pengelolaan Sumber Daya Air",
+        "file": "strategi_pengelolaan_sumber_daya_air.pdf"
+      }
+    ]
+  },
+  {
+    "key": "UM",
+    "judul": "Umum",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan administrasi pelaksanaan upacara dan kegiatan terkait Hari Kemerdekaan, Hari Besar Nasional, dan Hari Bhakti PUPR mulai dari perencanaan, pelaksanaan, sampai dengan pelaporan.",
+    "dokumen": [
+      {
+        "judul": "Kebijakan Pengelolaan Sumber Daya Air",
+        "file": "kebijakan_pengelolaan_sumber_daya_air.pdf"
+      },
+      {
+        "judul": "Strategi Pengelolaan Sumber Daya Air",
+        "file": "strategi_pengelolaan_sumber_daya_air.pdf"
+      }
+    ]
+  }
+]

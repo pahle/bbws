@@ -1,0 +1,201 @@
+[
+  {
+    "key": "SA",
+    "judul": "Sumber Daya Air",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan penyiapan bahan perumusan kebijakan dan strategi bidang sumber daya air",
+    "arsip": [
+      {
+        "tahun": "2019",
+        "dokumen": [
+          {
+            "kode_surat": "16/HK/M/2024",
+            "tahun": "2024",
+            "judul": "Google",
+            "tanggal_input": "24 Desember 2024",
+            "file": "test.pdf"
+          },
+          {
+            "kode_surat": "16/HK/M/2024",
+            "tahun": "2024",
+            "judul": "Google",
+            "tanggal_input": "24 Desember 2024",
+            "file": "test.pdf"
+          },
+          {
+            "kode_surat": "16/HK/M/2024",
+            "tahun": "2024",
+            "judul": "Google",
+            "tanggal_input": "24 Desember 2024",
+            "file": "test.pdf"
+          }
+        ]
+      },
+      {
+        "tahun": "2020",
+        "dokumen": [
+          {
+            "kode_surat": "16/HK/M/2024",
+            "tahun": "2024",
+            "judul": "Google",
+            "tanggal_input": "24 Desember 2024",
+            "file": "test.pdf"
+          },
+          {
+            "kode_surat": "16/HK/M/2024",
+            "tahun": "2024",
+            "judul": "Google",
+            "tanggal_input": "24 Desember 2024",
+            "file": "test.pdf"
+          },
+          {
+            "kode_surat": "16/HK/M/2024",
+            "tahun": "2024",
+            "judul": "Google",
+            "tanggal_input": "24 Desember 2024",
+            "file": "test.pdf"
+          }
+        ]
+      },
+      {
+        "tahun": "2021",
+        "dokumen": [
+          {
+            "kode_surat": "16/HK/M/2024",
+            "tahun": "2024",
+            "judul": "Google",
+            "tanggal_input": "24 Desember 2024",
+            "file": "test.pdf"
+          },
+          {
+            "kode_surat": "16/HK/M/2024",
+            "tahun": "2024",
+            "judul": "Google",
+            "tanggal_input": "24 Desember 2024",
+            "file": "test.pdf"
+          },
+          {
+            "kode_surat": "16/HK/M/2024",
+            "tahun": "2024",
+            "judul": "Google",
+            "tanggal_input": "24 Desember 2024",
+            "file": "test.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "CK",
+    "judul": "Cipta Karya",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan penyiapan bahan perumusan kebijakan dan strategi bidang cipta karya",
+    "arsip": [
+      {
+        "tahun": "2019",
+        "dokumen": [
+          {
+            "kode_surat": "16/HK/M/2024",
+            "tahun": "2024",
+            "judul": "Google",
+            "tanggal_input": "24 Desember 2024",
+            "file": "test.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "RU",
+    "judul": "Perumahan",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan penyiapan bahan perumusan kebijakan dan strategi bidang perumahan",
+    "arsip": [
+      {
+        "tahun": "2019",
+        "dokumen": [
+          {
+            "kode_surat": "16/HK/M/2024",
+            "tahun": "2024",
+            "judul": "Google",
+            "tanggal_input": "24 Desember 2024",
+            "file": "test.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "BK",
+    "judul": "Bina Konstruksi",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan penyiapan bahan perumusan kebijakan dan strategi bidang bina kostruksi",
+    "arsip": [
+      {
+        "tahun": "2019",
+        "dokumen": [
+          {
+            "kode_surat": "16/HK/M/2024",
+            "tahun": "2024",
+            "judul": "Google",
+            "tanggal_input": "24 Desember 2024",
+            "file": "test.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "IW",
+    "judul": "Pengembangan Infrastruktur Wilayah",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan penyiapan bahan perumusan kebijakan dan strategi bidang pengembangan infrastruktur wilayah",
+    "arsip": [
+      {
+        "tahun": "2019",
+        "dokumen": [
+          {
+            "kode_surat": "16/HK/M/2024",
+            "tahun": "2024",
+            "judul": "Google",
+            "tanggal_input": "24 Desember 2024",
+            "file": "test.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "LB",
+    "judul": "Penelitian dan Pengembangan",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan penyiapan bahan perumusan kebijakan dan strategi bidang penelitian dan pengembangan",
+    "arsip": [
+      {
+        "tahun": "2019",
+        "dokumen": [
+          {
+            "kode_surat": "16/HK/M/2024",
+            "tahun": "2024",
+            "judul": "Google",
+            "tanggal_input": "24 Desember 2024",
+            "file": "test.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "SM",
+    "judul": "Pengembangan Sumber Daya Manusia",
+    "deskripsi": "Rekaman kegiatan yang berkaitan dengan penyiapan bahan perumusan kebijakan dan strategi bidang penelitian dan pengembangan sumber daya manusia",
+    "arsip": [
+      {
+        "tahun": "2019",
+        "dokumen": [
+          {
+            "kode_surat": "16/HK/M/2024",
+            "tahun": "2024",
+            "judul": "Google",
+            "tanggal_input": "24 Desember 2024",
+            "file": "test.pdf"
+          }
+        ]
+      }
+    ]
+  }
+]
