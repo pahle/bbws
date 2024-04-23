@@ -18,6 +18,7 @@ model Data {
   key       String   @unique
   judul     String   @db.VarChar(255)
   deskripsi String?
+  kategori  Kategori @default(substantif)
   arsip     Arsip[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -43,4 +44,9 @@ model Dokumen {
   arsipId        Int
   created_at     DateTime @default(now())
   updated_at     DateTime @updatedAt
+}
+
+enum Kategori {
+  substantif
+  fasilitatif
 }
