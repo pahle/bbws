@@ -32,7 +32,7 @@ const Header = () => {
           </div>
         </div>
         <div className="flex justify-between items-center gap-4 font-bold">
-          <Link href="/substantif">SUBSTANTIF</Link>
+          <Link href="/sumberdayaair">SUMBER DAYA AIR</Link>
           <Link href="/fasilitatif">FASILITATIF</Link>
           <Link href="#">LOGOUT</Link>
         </div>

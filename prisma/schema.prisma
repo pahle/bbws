@@ -13,23 +13,22 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Data {
+model Bab {
   id        Int      @id @default(autoincrement())
-  key       String   @unique
   judul     String   @db.VarChar(255)
   deskripsi String?
-  kategori  Kategori @default(substantif)
-  arsip     Arsip[]
+  kategori  Kategori @default(sda)
+  sub_bab     Sub_Bab[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
 
-model Arsip {
+model Sub_Bab {
   id             Int      @id @default(autoincrement())
-  tahun          String   @db.VarChar(4)
+  judul          String   @db.VarChar(255)
+  bab           Bab     @relation(fields: [babId], references: [id])
+  babId         Int
   dokumen        Dokumen[]
-  data           Data     @relation(fields: [dataId], references: [id])
-  dataId         Int
   created_at     DateTime @default(now())
   updated_at     DateTime @updatedAt
 }
@@ -40,13 +39,13 @@ model Dokumen {
   tahun          String  @db.VarChar(4)
   judul          String  @db.VarChar(255)
   file           String  @db.VarChar(255)
-  arsip          Arsip   @relation(fields: [arsipId], references: [id])
-  arsipId        Int
+  sub_bab        Sub_Bab   @relation(fields: [sub_babId], references: [id])
+  sub_babId      Int
   created_at     DateTime @default(now())
   updated_at     DateTime @updatedAt
 }
 
 enum Kategori {
-  substantif
+  sda
   fasilitatif
 }
