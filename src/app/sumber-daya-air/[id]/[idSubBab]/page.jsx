@@ -1,21 +1,34 @@
 import React from "react";
-import { dataDokumenSDA, dataSubBabSDA } from "@/utils/getQueryOutputs";
+import DeleteButton from './DeleteButton';
+import {
+  dataDokumenSDA,
+  dataSubBabSDA,
+} from "@/utils/getQueryOutputs";
 import Link from "next/link";
+import { deleteData } from "@/utils/deleteData";
 
 const Dokumen = async (params) => {
   const data = await dataDokumenSDA();
 
-  const filteredData = data.filter((item) => item.sub_babId == params.params.idSubBab);
+  const filteredData = data.filter(
+    (item) => item.sub_babId == params.params.idSubBab
+  );
 
   const dataSubBab = await dataSubBabSDA();
 
-  const filteredDataSubBab = dataSubBab.find((item) => item.id == params.params.idSubBab);
+  const filteredDataSubBab = dataSubBab.find(
+    (item) => item.id == params.params.idSubBab
+  );
 
   return (
     <div>
       <h1 className="text-start font-bold mb-8">
         {filteredDataSubBab.judul}
-        <Link href={`/sumberdayaair/${params.params.id}/${params.params.idSubBab}/create`}>+</Link>
+        <Link
+          href={`/sda/${params.params.id}/${params.params.idSubBab}/create`}
+        >
+          +
+        </Link>
       </h1>
       <table className="table-auto w-full text-start">
         <thead>
@@ -38,8 +51,14 @@ const Dokumen = async (params) => {
               <td>{item.judul}</td>
               <td>{item.file}</td>
               <td>{item.created_at.toDateString()}</td>
-              <td>Lihat</td>
-              <td>Hapus</td>
+              <td>
+                <Link href={`/api?filename=${item.file}`}>
+                  Lihat
+                </Link>
+              </td>
+              <td>
+                <DeleteButton id={item.id}/>
+              </td>
               <td>Edit</td>
             </tr>
           ))}

@@ -3,15 +3,16 @@
 import prisma from "./prismaClient";
 
 export const createData = async (value) => {
-    // const data = {
-    //     key: value.key,
-    //     judul: value.judul,
-    //     deskripsi: value.deskripsi,
-    //     kategori: value.kategori,
-    // }
+    const data = {
+        kode_surat: value.kode_surat,
+        tahun: value.tahun,
+        judul: value.judul,
+        file: value.file,
+        sub_babId: value.sub_babId,
+    }
     try {
-        const queryCreate = await prisma.data.create({
-            data: value,
+        const queryCreate = await prisma.dokumen.create({
+            data: data,
         });
         return queryCreate;
     } catch (error) {

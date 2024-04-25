@@ -1,28 +1,57 @@
-'use client'
+"use client";
 
-import React from 'react'
+import { createData } from "@/utils/createData";
+import React from "react";
 
-const CreateDokumen = () => {
+const CreateDokumen = (params) => {
+  console.log(params.params)
+
   const initialValue = {
     kode_surat: "",
     tahun: "",
     judul: "",
     file: "",
-  }
+    sub_babId: parseInt(params.params.idSubBab)
+  };
 
-  const [form, setForm] = React.useState(initialValue)
+  const [form, setForm] = React.useState(initialValue);
+  const [file, setFile] = React.useState(null);
+
+  const handleFile = (e) => {
+    setFile(e.target.files[0]);
+    setForm({
+      ...form,
+      file: e.target.files[0].name.replaceAll(" ", "_"),
+    });
+  };
 
   const handleChange = (e) => {
     setForm({
       ...form,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  async function uploadFile() {
+    const formData = new FormData();
+    formData.append("file", file);
+
+    const res = await fetch("/api", {
+      method: "POST",
+      body: formData,
     })
+    const response = await res.json();
+    console.log(response);
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log(form)
-  }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await uploadFile();
+    await createData(form);
+    setForm(initialValue);
+    history.back();
+
+  };
 
   return (
     <div>
@@ -38,7 +67,7 @@ const CreateDokumen = () => {
             id="kode_surat"
             value={form.kode_surat}
             onChange={handleChange}
-            className='border-2 border-gray-400 p-2 rounded-lg w-full'
+            className="border-2 border-gray-400 p-2 rounded-lg w-full"
           />
         </div>
         <div className="flex flex-col gap-4">
@@ -49,7 +78,7 @@ const CreateDokumen = () => {
             id="tahun"
             value={form.tahun}
             onChange={handleChange}
-            className='border-2 border-gray-400 p-2 rounded-lg w-full'
+            className="border-2 border-gray-400 p-2 rounded-lg w-full"
           />
         </div>
         <div className="flex flex-col gap-4">
@@ -60,7 +89,7 @@ const CreateDokumen = () => {
             id="judul"
             value={form.judul}
             onChange={handleChange}
-            className='border-2 border-gray-400 p-2 rounded-lg w-full'
+            className="border-2 border-gray-400 p-2 rounded-lg w-full"
           />
         </div>
         <div className="flex flex-col gap-4">
@@ -69,15 +98,16 @@ const CreateDokumen = () => {
             type="file"
             name="file"
             id="file"
-            value={form.file}
-            onChange={handleChange}
-            className='border-2 border-gray-400 p-2 rounded-lg w-full'
+            onChange={handleFile}
+            className="border-2 border-gray-400 p-2 rounded-lg w-full"
           />
         </div>
-        <button type="submit" className='bg-blue-500'>Submit</button>
+        <button type="submit" className="bg-blue-500">
+          Submit
+        </button>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default CreateDokumen
+export default CreateDokumen;
