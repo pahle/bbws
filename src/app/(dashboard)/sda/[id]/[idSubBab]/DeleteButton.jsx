@@ -10,7 +10,14 @@ const DeleteButton = (id) => {
     await deleteData(id);
     router.refresh();
   };
-  return <button onClick={handleDelete}>Hapus</button>;
+  return (
+    <button
+      onClick={handleDelete}
+      className="text-red-600 hover:text-red-900"
+    >
+      Hapus
+    </button>
+  );
 };
 
 export default DeleteButton;

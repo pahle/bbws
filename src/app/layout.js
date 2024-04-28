@@ -3,6 +3,9 @@ import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
 
+import ButtonLogOut from "./ButtonLogOut";
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -34,7 +37,7 @@ const Header = () => {
         <div className="flex justify-between items-center gap-4 font-bold">
           <Link href="/sda">SUMBER DAYA AIR</Link>
           <Link href="/fasilitatif">FASILITATIF</Link>
-          <Link href="#">LOGOUT</Link>
+          <ButtonLogOut />
         </div>
       </div>
     </header>
@@ -54,7 +57,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className}`}>
         <Header />
-        <section className="p-10 relative pt-36 overflow-hidden">
+        <section className="p-10 relative pt-36 overflow-hidden min-h-[90dvh]">
           <Image
             src="/rectangle.png"
             width={600}

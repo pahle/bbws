@@ -1,13 +1,13 @@
 import React from "react";
-import Link from "next/link";
 import { dataBabSDA } from "@/utils/getQueryOutputs";
+import Link from "next/link";
 
-const Subtantif = async () => {
-  const data = await dataBabSDA()
+const Home = async () => {
+  const data = await dataBabSDA();
   return (
-    <div>
+    <>
       <h1 className="text-center font-bold mb-8">
-        SUMBER DAYA AIR
+        SEMUA ARSIP
       </h1>
       <div className="grid grid-cols-3 gap-20">
         {data.map((item, index) => (
@@ -19,15 +19,13 @@ const Subtantif = async () => {
             <div className="flex flex-col gap-4">
               <h1 className="text-xl">{item.judul}</h1>
               <p>{item.sub_bab.length} Dokumen</p>
-              <p>
-                {item.deskripsi}
-              </p>
+              <p>{item.deskripsi}</p>
             </div>
           </Link>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 
-export default Subtantif;
+export default Home;
