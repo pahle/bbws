@@ -76,7 +76,7 @@ const CreateDokumen = (params) => {
       <h1 className="text-start font-bold mb-8">
         Create Dokumen
       </h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <div className="flex flex-col gap-4">
           <label htmlFor="kode_surat">Kode Surat</label>
           <input
@@ -120,7 +120,7 @@ const CreateDokumen = (params) => {
             className="border-2 border-gray-400 p-2 rounded-lg w-full"
           />
         </div>
-        <button type="submit" className="bg-blue-500">
+        <button type="submit" className="bg-blue-300 w-24 p-2 rounded-lg self-center mt-4">
           Submit
         </button>
       </form>
