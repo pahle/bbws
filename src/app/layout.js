@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <header className="absolute z-10 w-full top-0 left-0">
       <div className="flex justify-between items-center bg-[#9EA0FF] p-4">
-        <div className="flex items-center gap-4">
+        <Link href="/" className="flex items-center gap-4">
           <Image
             src="/logo.png"
             width={80}
@@ -33,7 +33,7 @@ const Header = () => {
               Rakyat
             </p>
           </div>
-        </div>
+        </Link>
         <div className="flex justify-between items-center gap-4 font-bold">
           <Link href="/sda">SUMBER DAYA AIR</Link>
           <Link href="/fasilitatif">FASILITATIF</Link>

@@ -1,9 +1,9 @@
 import React from "react";
-import { dataBabSDA } from "@/utils/getQueryOutputs";
+import { dataBab } from "@/utils/getQueryOutputs";
 import Link from "next/link";
 
 const Home = async () => {
-  const data = await dataBabSDA();
+  const data = await dataBab();
   return (
     <>
       <h1 className="text-center font-bold mb-8">

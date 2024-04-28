@@ -45,3 +45,18 @@ export const deleteData = async (value) => {
         prisma.$disconnect();
     }
 }
+
+export const deleteDataSubBab = async (value) => {
+    try {
+        const query = await prisma.sub_Bab.delete({
+            where: {
+                id: value.id
+            }
+        });
+        return query;
+    } catch (error) {
+        console.error(error);
+    } finally {
+        prisma.$disconnect();
+    }
+}

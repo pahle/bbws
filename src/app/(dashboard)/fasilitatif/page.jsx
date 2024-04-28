@@ -5,17 +5,17 @@ import { dataBab } from "@/utils/getQueryOutputs";
 const Subtantif = async () => {
   const data = await dataBab()
 
-  const filteredData = data.filter((item) => item.kategori === "sda");
+  const filteredData = data.filter((item) => item.kategori === "fasilitatif");
 
   return (
     <div>
       <h1 className="text-center font-bold mb-8">
-        SUMBER DAYA AIR
+        FASILITATIF
       </h1>
       <div className="grid grid-cols-3 gap-20">
         {filteredData.map((item, index) => (
           <Link
-            href={`/sda/${item.id}`}
+            href={`/fasilitatif/${item.id}`}
             key={index}
             className="w-full border-2 flex p-8 rounded-xl gap-4 bg-white drop-shadow-lg"
           >

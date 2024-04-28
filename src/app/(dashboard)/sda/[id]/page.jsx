@@ -1,13 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import { dataSubBabSDA } from "@/utils/getQueryOutputs";
+import { dataSubBab } from "@/utils/getQueryOutputs";
 
 const SubBab = async (params) => {
-  const data = await dataSubBabSDA();
+  const data = await dataSubBab();
 
   const filteredData = data.filter((item) => item.babId == params.params.id);
 
-  console.log(filteredData)
 
   return (
     <div>

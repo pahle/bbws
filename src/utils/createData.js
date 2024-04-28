@@ -19,3 +19,18 @@ export const createData = async (value) => {
         console.error(error);
     }
 }
+
+export const createDataSubBab = async (value) => {
+    const data = {
+        judul: value.judul,
+        babId: value.babId,
+    }
+    try {
+        const queryCreate = await prisma.sub_Bab.create({
+            data: data,
+        });
+        return queryCreate;
+    } catch (error) {
+        console.error(error);
+    }
+}

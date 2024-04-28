@@ -2,7 +2,7 @@
 
 import prisma from "./prismaClient";
 
-export const dataBabSDA = async () => {
+export const dataBab = async () => {
     try {
         const query = await prisma.bab.findMany({
             include: {
@@ -17,7 +17,7 @@ export const dataBabSDA = async () => {
     }
 }
 
-export const dataSubBabSDA = async () => {
+export const dataSubBab = async () => {
     try {
         const query = await prisma.sub_Bab.findMany({
             include: {
@@ -32,7 +32,7 @@ export const dataSubBabSDA = async () => {
     }
 }
 
-export const dataDokumenSDA = async () => {
+export const dataDokumen = async () => {
     try {
         const query = await prisma.dokumen.findMany();
         return query;

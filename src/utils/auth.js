@@ -6,7 +6,6 @@ import { createSession } from "@/utils/session";
 import { cookies } from "next/headers";
 
 export async function auth(formData) {
-  console.log(formData.get("username"));
   try {
     const query = await prisma.user.findUnique({
       where: {
