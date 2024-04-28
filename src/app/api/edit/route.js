@@ -2,40 +2,21 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { writeFile } from "fs/promises";
+import prisma from "@/utils/prismaClient";
 
 export const GET = async (req) => {
-  const fileName = req.nextUrl.searchParams.get("filename");
-  const imgPath = "public/assets/" + fileName;
-  // read image file
-  const image = fs.readFileSync(imgPath, (err, data) => {
-    // error handle
-    if (err) {
-      throw err;
-    }
+  const id = req.nextUrl.searchParams.get("id");
 
-    // get image file extension name
-    const extensionName = path.extname(imgPath);
-
-    // convert image file to base64-encoded string
-    const base64Image = Buffer.from(
-      data,
-      "binary"
-    ).toString("base64");
-
-    // combine all strings
-    return `data:image/${extensionName
-      .split(".")
-      .pop()};base64,${base64Image}`;
-  });
-
-  console.log(image);
-
-  return new NextResponse(image, {
-    status: 200,
-    headers: {
-      "Content-Type": "application/pdf",
+  const data = await prisma.dokumen.findUnique({
+    where: {
+      id: parseInt(id),
     },
   });
+
+//   return json
+    return new NextResponse(JSON.stringify(data), {
+        status: 200,
+    });
 };
 
 export const POST = async (req, res) => {

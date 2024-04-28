@@ -59,7 +59,13 @@ const Dokumen = async (params) => {
               <td>
                 <DeleteButton id={item.id}/>
               </td>
-              <td>Edit</td>
+              <td>
+                <Link
+                  href={`/sda/${params.params.id}/${params.params.idSubBab}/edit?id=${item.id}`}
+                >
+                  Edit
+                </Link>
+              </td>
             </tr>
           ))}
         </tbody>

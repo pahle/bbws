@@ -19,7 +19,11 @@ export const dataBabSDA = async () => {
 
 export const dataSubBabSDA = async () => {
     try {
-        const query = await prisma.sub_Bab.findMany();
+        const query = await prisma.sub_Bab.findMany({
+            include: {
+                dokumen: true
+            }
+        });
         return query;
     } catch (error) {
         console.error(error);

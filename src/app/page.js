@@ -1,9 +1,31 @@
-import React from 'react'
+import React from "react";
+import { dataBabSDA } from "@/utils/getQueryOutputs";
+import Link from "next/link";
 
-const Home = () => {
+const Home = async () => {
+  const data = await dataBabSDA();
   return (
-    <div>Home</div>
-  )
-}
+    <div>
+      <h1 className="text-center font-bold mb-8">
+        SEMUA ARSIP
+      </h1>
+      <div className="grid grid-cols-3 gap-20">
+        {data.map((item, index) => (
+          <Link
+            href={`/sda/${item.id}`}
+            key={index}
+            className="w-full border-2 flex p-8 rounded-xl gap-4 bg-white drop-shadow-lg"
+          >
+            <div className="flex flex-col gap-4">
+              <h1 className="text-xl">{item.judul}</h1>
+              <p>{item.sub_bab.length} Dokumen</p>
+              <p>{item.deskripsi}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+};
 
-export default Home
+export default Home;
